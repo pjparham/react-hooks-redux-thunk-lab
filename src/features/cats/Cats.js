@@ -1,5 +1,6 @@
 import React, { useEffect } from "react"; // 3
 import { useDispatch, useSelector } from "react-redux"; // 1 & 3
+import CatList from "./CatList"
 import { fetchCats } from "./catsSlice"; // 3
 
 function Cats() {
@@ -15,7 +16,7 @@ function Cats() {
   return (
     <div>
       <h1>CatBook</h1>
-      {/* add CatList component here */}
+      <CatList catPics={catPics}/>
     </div>
   );
 }
